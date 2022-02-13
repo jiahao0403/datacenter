@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} 這是title {%endblock%}
+{% block headmessage %}
+<h2>高科大校內工讀媒合系統</h2>
+{%endblock%}
+{% block content%} 
+    <table class="table table-dark table-striped">
+        <tr><td>標題</td><td>張貼日期</td></tr>
+        {% for post in posts %}
+            <tr>    
+                <td>{{ post.title }}</td>
+                <td>{{ post.pub_date }} </td> 
+            </tr>
+        {% endfor %}
+    </table>
+{%endblock%}
