@@ -20,7 +20,7 @@ def showdate(request):
 	return HttpResponse("現在時間:"+str(now))
 
 def poem(request):
-	f = open("news.txt","r", encoding="utf-8").read()
+	f = open("poem.txt","r", encoding="utf-8").read()
 
 	jieba.load_userdict('dict.txt')
 

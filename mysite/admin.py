@@ -1,3 +1,4 @@
 from django.contrib import admin
+from mysite.models import SongCi
 
-# Register your models here.
+admin.site.register(SongCi)
